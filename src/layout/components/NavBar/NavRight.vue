@@ -22,7 +22,7 @@
         <router-link to="/">
           <el-dropdown-item>{{ $t("navbar.dashboard") }}</el-dropdown-item>
         </router-link>
-        <a
+        <!-- <a
           target="_blank"
           href="https://github.com/youlaitech/vue3-element-admin"
         >
@@ -33,7 +33,7 @@
         </a>
         <a target="_blank" href="https://juejin.cn/post/7228990409909108793">
           <el-dropdown-item>{{ $t("navbar.document") }}</el-dropdown-item>
-        </a>
+        </a> -->
         <el-dropdown-item divided @click="logout">
           {{ $t("navbar.logout") }}
         </el-dropdown-item>

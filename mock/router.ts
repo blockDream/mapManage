@@ -5,6 +5,57 @@ const data = {
   code: "00000",
   data: [
     {
+      path: "/api",
+      component: "Layout",
+      meta: {
+        title: "图集图册管理",
+        component: "system/dict/index",
+        icon: "api",
+        hidden: false,
+        roles: ["ADMIN"],
+        keepAlive: true,
+      },
+      children: [
+        {
+          path: "apidoc",
+          component: "system/role/index",
+          name: "Apidoc",
+          meta: {
+            title: "图集图册管理",
+            icon: "api",
+            hidden: false,
+            roles: ["ADMIN"],
+            keepAlive: false,
+          },
+        },
+      ],
+    },
+    {
+      path: "/external-link",
+      component: "Layout",
+      redirect: "noredirect",
+      meta: {
+        title: "外部链接",
+        icon: "link",
+        hidden: false,
+        roles: ["ADMIN"],
+        keepAlive: true,
+      },
+      children: [
+        {
+          component: "system/role/index",
+          path: "apidoc",
+          meta: {
+            title: "任务管理",
+            icon: "document",
+            hidden: false,
+            roles: ["ADMIN"],
+            keepAlive: true,
+          },
+        },
+      ],
+    },
+    {
       path: "/system",
       component: "Layout",
       redirect: "/system/user",
@@ -57,7 +108,7 @@ const data = {
           component: "system/dept/index",
           name: "Dept",
           meta: {
-            title: "部门管理",
+            title: "日志管理",
             icon: "tree",
             hidden: false,
             roles: ["ADMIN"],
@@ -79,55 +130,6 @@ const data = {
       ],
     },
 
-    {
-      path: "/api",
-      component: "Layout",
-      meta: {
-        title: "接口",
-        icon: "api",
-        hidden: false,
-        roles: ["ADMIN"],
-        keepAlive: true,
-      },
-      children: [
-        {
-          path: "apidoc",
-          component: "demo/api-doc",
-          name: "Apidoc",
-          meta: {
-            title: "接口文档",
-            icon: "api",
-            hidden: false,
-            roles: ["ADMIN"],
-            keepAlive: false,
-          },
-        },
-      ],
-    },
-    {
-      path: "/external-link",
-      component: "Layout",
-      redirect: "noredirect",
-      meta: {
-        title: "外部链接",
-        icon: "link",
-        hidden: false,
-        roles: ["ADMIN"],
-        keepAlive: true,
-      },
-      children: [
-        {
-          path: "https://juejin.cn/post/7228990409909108793",
-          meta: {
-            title: "document",
-            icon: "document",
-            hidden: false,
-            roles: ["ADMIN"],
-            keepAlive: true,
-          },
-        },
-      ],
-    },
     // {
     //   path: "/multi-level",
     //   component: "Layout",

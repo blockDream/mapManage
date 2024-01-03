@@ -117,7 +117,7 @@ orderCount.value = 2000;
     </el-card>
 
     <!-- 数据卡片 -->
-    <el-row :gutter="10" class="mt-3">
+    <!-- <el-row :gutter="10" class="mt-3">
       <el-col :xs="24" :sm="12" :lg="6">
         <el-card shadow="never">
           <template #header>
@@ -141,10 +141,10 @@ orderCount.value = 2000;
             <span> {{ Math.round(visitCountOutput * 15) }} </span>
           </div>
         </el-card>
-      </el-col>
+      </el-col> -->
 
-      <!--消息数-->
-      <el-col :xs="24" :sm="12" :lg="6">
+    <!--消息数-->
+    <!-- <el-col :xs="24" :sm="12" :lg="6">
         <el-card shadow="never">
           <template #header>
             <div class="flex items-center justify-between">
@@ -167,10 +167,10 @@ orderCount.value = 2000;
             <span> {{ Math.round(dauCountOutput) }} </span>
           </div>
         </el-card>
-      </el-col>
+      </el-col> -->
 
-      <!--销售额-->
-      <el-col :xs="24" :sm="12" :lg="6">
+    <!--销售额-->
+    <!-- <el-col :xs="24" :sm="12" :lg="6">
         <el-card shadow="never">
           <template #header>
             <div class="flex items-center justify-between">
@@ -193,10 +193,10 @@ orderCount.value = 2000;
             <span> {{ Math.round(amountOutput * 15) }} </span>
           </div>
         </el-card>
-      </el-col>
+      </el-col> -->
 
-      <!--订单量-->
-      <el-col :xs="24" :sm="12" :lg="6">
+    <!--订单量-->
+    <!-- <el-col :xs="24" :sm="12" :lg="6">
         <el-card shadow="never">
           <template #header>
             <div class="flex items-center justify-between">
@@ -220,10 +220,10 @@ orderCount.value = 2000;
           </div>
         </el-card>
       </el-col>
-    </el-row>
+    </el-row> -->
 
     <!-- Echarts 图表 -->
-    <el-row :gutter="10" class="mt-3">
+    <!-- <el-row :gutter="10" class="mt-3">
       <el-col :sm="24" :lg="8" class="mb-2">
         <BarChart
           id="barChart"
@@ -250,7 +250,7 @@ orderCount.value = 2000;
           class="bg-[var(--el-bg-color-overlay)]"
         />
       </el-col>
-    </el-row>
+    </el-row> -->
   </div>
 </template>
 

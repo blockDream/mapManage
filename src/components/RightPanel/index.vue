@@ -56,7 +56,7 @@ onBeforeUnmount(() => {
   <div ref="rightPanel" :class="{ show: show }">
     <div class="right-panel-overlay"></div>
     <div class="right-panel-container">
-      <div
+      <!-- <div
         class="right-panel-btn"
         :style="{
           top: buttonTop + 'px',
@@ -65,7 +65,7 @@ onBeforeUnmount(() => {
       >
         <i-ep-close v-show="show" />
         <i-ep-setting v-show="!show" />
-      </div>
+      </div> -->
       <div>
         <slot></slot>
       </div>
