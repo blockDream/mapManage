@@ -9,7 +9,7 @@ const data = {
       component: "Layout",
       meta: {
         title: "图集图册管理",
-        component: "system/dict/index",
+        component: "system/menu/index",
         icon: "api",
         hidden: false,
         roles: ["ADMIN"],
@@ -18,7 +18,7 @@ const data = {
       children: [
         {
           path: "apidoc",
-          component: "system/role/index",
+          component: "system/menu/index",
           name: "Apidoc",
           meta: {
             title: "图集图册管理",
@@ -43,7 +43,7 @@ const data = {
       },
       children: [
         {
-          component: "system/role/index",
+          component: "system/menu/index",
           path: "apidoc",
           meta: {
             title: "任务管理",

@@ -67,13 +67,13 @@ const menuCacheData = reactive({
 function handleQuery() {
   // 重置父组件
   loading.value = true;
-  listMenus(queryParams)
-    .then(({ data }) => {
-      menuList.value = data;
-    })
-    .then(() => {
-      loading.value = false;
-    });
+  // listMenus(queryParams)
+  //   .then(({ data }) => {
+  //     menuList.value = data;
+  //   })
+  //   .then(() => {
+  //     loading.value = false;
+  //   });
 }
 
 /** 重置查询 */

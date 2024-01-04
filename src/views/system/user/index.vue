@@ -337,12 +337,12 @@ onMounted(() => {
   <div class="app-container">
     <el-row :gutter="20">
       <!-- 部门树 -->
-      <el-col :lg="4" :xs="24" class="mb-[12px]">
+      <!-- <el-col :lg="4" :xs="24" class="mb-[12px]">
         <dept-tree v-model="queryParams.deptId" @node-click="handleQuery" />
-      </el-col>
+      </el-col> -->
 
       <!-- 用户列表 -->
-      <el-col :lg="20" :xs="24">
+      <el-col :lg="24" :xs="24">
         <div class="search-container">
           <el-form ref="queryFormRef" :model="queryParams" :inline="true">
             <el-form-item label="关键字" prop="keywords">
